@@ -1,0 +1,16 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 3080
+  connection-timeout: 5000ms
+  servlet:
+    context-path: /esdemo
+
+
+spring.data:
+       elasticsearch:
+           cluster-name: zeno-search-dev-6
+           cluster-nodes: 192.168.1.252:9300
